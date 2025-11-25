@@ -47,6 +47,7 @@ target_link_libraries(px4ctrl_node
 catkin_install_python(PROGRAMS
   thrust_calibrate_scripts/thrust_calibrate.py
   scripts/pose2odom.py
+  scripts/odom2pose.py
   scripts/waypoint_pub.py
   scripts/waypoint_pub_divert.py
   # scripts/odom2pose.py

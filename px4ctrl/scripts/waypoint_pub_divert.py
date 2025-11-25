@@ -13,8 +13,8 @@ from tf.transformations import euler_from_quaternion  # To convert quaternion to
 # Waypoint list: [(x, y, z, yaw), ...] - ENU coordinates (yaw in radians)
 WAYPOINTS = [
     (0.0, 0.0, 1.0, 0.0),    # Waypoint 1 (0 rad = 0 deg)
-    (1.0, 0.0, 1.0, 0.0),    # Waypoint 1 (0 rad = 0 deg)
-    (1.0, 1.0, 1.0, 0.0),  # Waypoint 2 (0.785 rad = 45 deg)
+    (-1.0, 0.0, 1.0, 0.0),    # Waypoint 1 (0 rad = 0 deg)
+    (-1.0, 1.0, 1.0, 0.0),  # Waypoint 2 (0.785 rad = 45 deg)
     (0.0, 1.0, 1.0, 0.0),   # Waypoint 3 (1.57 rad = 90 deg)
     (0.0, 0.0, 1.0, 0.0)     # Waypoint 4 (0 rad = 0 deg)
 ]
@@ -29,7 +29,7 @@ PUBLISH_RATE = 10.0       # [Hz] - Publishing frequency
 YAW_TOLERANCE_RAD = math.radians(YAW_TOLERANCE_DEG)
 
 # ROS Topics
-ODOM_TOPIC = "/odom"  # Current position/yaw feedback
+ODOM_TOPIC = "/Odometry"  # Current position/yaw feedback
 TARGET_TOPIC = "/cmd"  # Topic for PositionCommand
 # ==============================================================================
 

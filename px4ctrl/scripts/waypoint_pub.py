@@ -27,7 +27,7 @@ PUBLISH_RATE = 10.0       # [Hz] - Publishing frequency
 YAW_TOLERANCE_RAD = math.radians(YAW_TOLERANCE_DEG)
 
 # ROS Topics
-ODOM_TOPIC = "/odom"  # Current position/yaw feedback
+ODOM_TOPIC = "/Odometry"  # Current position/yaw feedback
 TARGET_TOPIC = "/cmd"  # Topic for PositionCommand
 # ==============================================================================
 

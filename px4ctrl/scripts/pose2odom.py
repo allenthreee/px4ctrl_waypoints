@@ -24,7 +24,7 @@ class PoseToOdometryConverter:
         
         # Odometry publisher
         self.odom_pub = rospy.Publisher(
-            '/odom',  # Output Odometry topic
+            '/Odometry',  # Output Odometry topic
             Odometry,
             queue_size=10
         )

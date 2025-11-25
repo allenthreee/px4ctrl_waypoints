@@ -155,9 +155,9 @@ void Odom_Data_t::feed(nav_msgs::OdometryConstPtr pMsg)
     static ros::Time last_clear_count_time = ros::Time(0.0);
     if ( (now - last_clear_count_time).toSec() > 1.0 )
     {
-        if ( one_min_count < 100 )
+        if ( one_min_count < 8 )
         {
-            ROS_WARN("ODOM frequency seems lower than 100Hz, which is too low!");
+            ROS_WARN("ODOM frequency seems lower than 8 Hz, which is too low!");
         }
         one_min_count = 0;
         last_clear_count_time = now;
